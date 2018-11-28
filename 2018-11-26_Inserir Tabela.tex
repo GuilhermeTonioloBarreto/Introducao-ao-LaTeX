@@ -1,0 +1,114 @@
+%Inserir Tabela
+\documentclass[a4paper, 12pt]{article}
+\usepackage[top=2cm, bottom=2cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amsfonts, amssymb} 
+\usepackage{graphicx}
+\usepackage{float} 
+\usepackage[portuguese]{babel}
+
+\begin{document}
+
+\begin{center}
+    \begin{tabular}{|c|p{10cm}|} %uma maneira de aumentar a borda do cabeçalho
+            \hline
+            \begin{tabular}{c}
+                \includegraphics[scale=0.25]{imagens/logotipo.jpeg}
+            \end{tabular}
+            
+            &
+            
+            \begin{tabular}{r}
+                Canal LCMAQUINO \\
+                http://www.lcmaquino.org/ \\
+                Prof. Luiz C. M. de Aquino. \\
+            \end{tabular}
+            
+        \\ \hline
+        
+        \end{tabular}
+\end{center}
+
+\begin{center}
+    \begin{tabular}{|p{0.6\textwidth}|c|} %outra maneira de aumentar a borda do cabeçalho
+            \hline
+            \begin{tabular}{c}
+                \includegraphics[scale=0.25]{imagens/logotipo.jpeg}
+            \end{tabular}
+            &
+            \begin{tabular}{r}
+                Canal LCMAQUINO \\
+                http://www.lcmaquino.org/ \\
+                Prof. Luiz C. M. de Aquino. \\
+            \end{tabular}
+            
+        \\ \hline
+        
+        \end{tabular}
+\end{center}
+
+\begin{enumerate}
+    \item A tabela abaixo representa as derivadas básicas.
+    
+    \begin{tabular}{cc} %comando para colocar tabelas no texto. a letra c significa centralizar. ela pode ser substituída por r (direita) ou l (esquerda)
+    
+    Função & Derivada\\
+    $f(x) = x^n$     & $f'(x) = nx^{n-1}$ \\
+    $f(x) = \log_a x$ & $f'(x) = \dfrac{1}{x \ln a}$
+    \end{tabular}
+    
+    \item A tabela abaixo representa as derivadas básicas.
+
+    \begin{tabular}{|c|c|} %as barras verticais colocadas no argumento da função colocam de fato barras verticais no documento do latex
+    
+    \hline %coloca linhas horizontais abaixo do texto
+    
+    Função & Derivada\\ \hline 
+    $f(x) = x^n$     & $f'(x) = nx^{n-1}$ \\ \hline
+    $f(x) = \log_a x$ & $f'(x) = \dfrac{1}{x \ln a}$ \\ \hline
+    \end{tabular}
+    
+    \item A tabela abaixo representa as derivadas básicas.
+
+    \begin{tabular}{c||c} 
+    \hline 
+    Função & Derivada\\ \hline \hline 
+    $f(x) = x^n$     & $f'(x) = nx^{n-1}$ \\ \hline \hline
+    $f(x) = \log_a x$ & $f'(x) = \dfrac{1}{x (\ln a)}$ \\ \hline
+    \end{tabular}
+    
+    \item A tabela abaixo representa as derivadas básicas.
+
+    
+    \begin{center} %centralizar tabela
+        
+        \begin{tabular}{c||c} 
+        \hline 
+        Função & Derivada\\ \hline \hline 
+        $f(x) = x^n$     & $f'(x) = nx^{n-1}$ \\ \hline \hline
+        $f(x) = \log_a x$ & $f'(x) = \dfrac{1}{x \ln a}$ \\ \hline
+        \end{tabular}
+        
+    \end{center}
+    
+    \item A Tabela \ref{minha-tabela} representa as derivadas básicas.
+    
+    \begin{table}[!htb] %organiza a tabela, colocando legenda, numeração, essas coisas. o que está escrito entre conchetes "htb". o ponto de exclamação ! no colchete meio que força a quebrar as regras de htb e tenta colocar o máximo possível no local desejado. 
+    
+    \centering
+    
+        \begin{tabular}{c||c} 
+        \hline 
+        Função & Derivada\\ \hline \hline 
+        $f(x) = x^n$     & $f'(x) = nx^{n-1}$ \\ \hline \hline
+        $f(x) = \log_a x$ & $f'(x) = \dfrac{1}{x (\ln a)}$ \\ \hline
+        \end{tabular}
+    
+    \caption{Tabela básica de Derivadas.} %inserir legenda
+    \label{minha-tabela} %colocar umm rótulo na tabela (para referenciar no texto).
+    \end{table}
+    
+    
+\end{enumerate}
+
+\end{document}

@@ -1,0 +1,56 @@
+%Formatação Básica do Texto
+
+%-------------------- preâmbulo -------------------------------------
+
+%Essa primeira parte se chama preâmbulo. É nela que se configura as características gerais do documento (Margens, tamanho da letra, fonte, tamanho do papel do documento, ect)
+
+\documentclass[a4paper, 12pt]{article} %essa é uma classe básica do LaTeX. Nela, você coloca a classe de documento que você está escrevendo (article, book, entre outras) entre chaves, e você coloca os atributos dessa classe entre colchetes (como o tipo de papel, o tamanho da fonte). Ela é a única classe necessária para que se possa ter um arquivo em LaTeX
+
+\usepackage[top=2cm, bottom=2cm, left=2.5cm, right=2.5cm]{geometry} %esse é um pacote do LaTex. Um pacote é um arquivo com várias funções com uma finalidade específica. A função nesse caso se chama geometry (configura as margens do LaTeX). Sempre se coloca o nome do pacote entre chaves. Os atributos dessa função você coloca entre colchetes (no caso, o tamanho das margens)
+
+\usepackage[utf8]{inputenc}%input encoder = codificação de entrada - permite colocar caracteres especiais no documento.
+
+
+%-------------------------- corpo do texto -------------------------
+
+%O corpo do texto é onde você escreve de fato o texto. 
+
+\begin{document} %Toda função que começe com \begin{} vai ser finalizada com um \end{}. No caso,\begin{document} serve para inicializar a digitação do texto
+
+Estou escrevendo um texto
+Pulei uma linha no LaTeX, mas mesmo assim, na exibição do documento pdf, continuarei na mesma linha. Para eu mudar de linha de fato, eu tenho que pular duas linhas no documento LaTeX, de forma a aparecer uma linha vazia em si. 
+
+Desse jeito, eu consigo pular de linha
+
+Equa\c c\~ao polimonial do 2$^\circ$ grau %Maneira de se escrever o caractere especial ç , colocar o acento Til na letra A e colocar a bolinha º, para dizer que é um número ordinário
+
+Vov\´o Vov\^o %Escrever usando acento agudo e circunflexo
+
+Equação polimonial do 2º grau %neste caso, não foi preciso colocar comandos de caracteres especiais, pois o pacote inputenc já faz essa correspondência com os caracteres especiais
+
+Vovó Vovô
+
+\begin{center} %centraliza o texto
+    \textbf{Equação polimonial do 2º grau} %coloca o texto em negrito
+\end{center}
+
+\begin{flushright} %Coloca o texto a direita
+    \textit{Equação polimonial do 2º grau} %Coloca o texto em Itálico
+\end{flushright}
+
+\begin{flushleft} %Coloca o texto a esquerda
+    \underline{Equação polimonial do 2º grau} %Coloca o texto em sublinhado
+\end{flushleft}
+
+\begin{flushleft} %Coloca o texto a esquerda
+    \textbf{\textit{\underline{Equação polimonial do 2º grau}}} %Coloca o texto em negrito, italico e sublinhado
+\end{flushleft}
+
+Uma Equação da forma $ax^2 + bx + c = 0$, $a \neq 0$ será chamada de equação polimonial do 2º grau %utiliza-se cifrão simples $ para se colocar uma equação matemática na mesma linha do texto 
+
+Uma Equação da forma $$ax^2 + bx + c = 0,$$ com $a \neq 0$ será chamada de equação polimonial do 2º grau %utiliza-se cifrão duplo $$ para se colocar uma equação matemática na mesma linha do texto 
+
+A solução desta equação é dada por
+$$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
+
+\end{document}

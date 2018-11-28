@@ -1,0 +1,69 @@
+%Notações de Cálculo
+\documentclass[a4paper, 12pt]{article}
+\usepackage[top=2cm, bottom=2cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amsfonts, amssymb} 
+\newcommand{\limite}{\displaystyle\lim} %define um comando baseado em outros já existentes. a primeira chaves aparece o comando que você quer criar, e a segunda chaves você coloca a junção de comandos que você quer ter
+\newcommand{\integral}{\displaystyle\int}
+
+\begin{document}
+
+\begin{enumerate}
+    \item Calcule os limites abaixo:
+    
+    \begin{enumerate}
+        \item $$\lim_{x \to 1} \dfrac{x^2 - 1}{x - 1}$$ %colocar limite centralizado, mas sem estar na mesma linha
+        
+        \item $\displaystyle\lim_{x \to 1} \frac{x^2 - 1}{x - 1}$ %limite de uma função. Como estamos utilizando \displaystyle, não precisamos (no caso de fração), o uso da funçaõ \dfrac. \frac já resolve o problema
+        
+        \item $\limite_{x \to 1} \frac{x^2 - 1}{x - 1}$%usando o novo comando criado
+        
+    \end{enumerate}
+    
+    \item Seja a função definida por $f(x) = x^2 - \sqrt{x}$. Calcule as derivadas abaixo: 
+    
+    \begin{enumerate}
+        \item $f'$ %notação de derivada
+        \item $f''$
+        \item $f'''$
+        \item $f^{(iv)}$
+        \item $f^{(v)}$
+        \item $\dfrac{df}{dx}$ %outro tipo de notação de derivada
+        \item $\dfrac{d^2f}{dx^2}$
+        \item $\dfrac{d^3f}{dx^3}$
+        \item $\dfrac{d^4f}{dx^4}$
+        \item $\dfrac{d^5f}{dx^5}$
+    \end{enumerate}
+    
+    \item Seja a função definida por $f(x, \, y) = yx^2 - \sqrt{x} + y^3$. Calcule as derivadas abaixo:
+    
+    \begin{enumerate}
+        \item $\dfrac{\partial f}{\partial x}$ %derivada parcial de primeira ordem
+        \item $\dfrac{\partial ^2f}{\partial ^2x}$ 
+        \item $\dfrac{\partial ^3f}{\partial ^3y}$ 
+        \item $\dfrac{\partial ^4f}{\partial ^4x}$ 
+        \item $\dfrac{\partial ^5f}{\partial ^5y}$
+        \item $\dfrac{\partial f}{\partial x}\left(\dfrac{\partial f}{\partial y}\right)$
+    \end{enumerate}
+    
+    \item Calcule as integrais abaixo:
+    
+    \begin{enumerate}
+        \item $\int_1^5 x^2\cos x \,dx$ %integral (os limites da integral estão esmagados na linha)
+        \item $$\int_1^5 x^2\cos x \,dx$$ %colocar integral centralizada, mas sem estar na mesma linha
+        \item $\displaystyle\int_1^5 x^2\cos x \,dx$ %integral (os limites da integral agora não estão esmagados na linha)
+        \item $\integral_1^5 x^2\cos x \, dx$
+
+    \end{enumerate}
+    
+    \item Calcule as somatórias abaixo:
+    
+    \begin{enumerate}
+        \item $\sum_{i=1}^n a_i$ %somatória (os limites da somatória estão esmagados na linha)
+        \item $\displaystyle\sum_{i=1}^n a_i$ %somatória sem os limites da mesma estarem esmagados
+        \item $$\sum_{i=1}^n a_i$$
+    \end{enumerate}
+    
+\end{enumerate}
+
+\end{document}

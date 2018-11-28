@@ -1,0 +1,70 @@
+%Listas e Operações Básicas
+
+\documentclass[a4paper, 12pt]{article}
+\usepackage[top=2cm, bottom=2cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amsfonts, amssymb} %ams = americam mathematic society. São alguns pacotes disponibilizados por essa sociedade
+
+\begin{document}
+
+\begin{enumerate} % criar uma lista numérica
+    \item vem o texto
+    
+    \begin{enumerate} %criando listas numéricas dentro de outra lista
+        \item aqui vem um texto
+    
+        \begin{enumerate}
+            \item aqui vem um texto
+            \item aqui vem mais outro texto
+            \item aqui tem texto
+        \end{enumerate}
+        
+        \item aqui vem mais outro texto
+        \item aqui tem texto
+    \end{enumerate}
+    
+    \item mais outro texto
+    \item outro texto
+\end{enumerate}
+
+\begin{itemize} %criar listas não numeradas
+        \item isso aqui é um item
+        
+        \begin{itemize} % criar listas não numeradas dentro de listas não numeradas
+            \item sei lá
+            \item não sei oque
+            \item pode pá
+        \end{itemize}
+        
+        \item isso aqui é outro item
+        \item mais outro item
+\end{itemize}
+
+$a+b$ %soma
+
+$a-b$ % subtração
+
+$a \cdot b$ %multiplicação
+
+$a \times b$ %multiplicação
+
+$a \div b$ %divisão
+
+fração expremida na linha: $\frac{a}{b}$ %fração: usando um $ apenas, a fração fica expremida, para que caiba na linha
+
+uma linha de teste para ver como fica
+
+fração não expremida na linha: $\dfrac{a}{b}$ %fração usando \dfrac{}{}. É uma função do pacote amsmath
+
+$\sqrt{a}$ %colocar raiz quadrada
+
+$\sqrt[3]{a}$ %colocar raiz enésima (no exemplo, raiz cúbica) de a 
+
+$a^b$ %potência de um caractere
+
+$a^{b+c}$ %potência com mais de um caractere
+
+$a_1$, $a_2$, $a_3$ e $a_4$ %índice com um caractere
+
+$a_{10}$ %índice com mais de um caractere
+\end{document}

@@ -1,0 +1,50 @@
+%Notações de Conjunto
+
+\documentclass[a4paper, 12pt]{article}
+\usepackage[top=2cm, bottom=2cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amsfonts, amssymb} 
+
+\begin{document}
+
+\begin{enumerate}
+    \item Sejam os conjuntos $A = \{1; 2; 3; 4\}$ %para escrever as chaves do conjunto, deve-se colocar \{ texto a ser escrito \}.
+    
+    \begin{enumerate}
+        \item tipo de espacamento entre números: $A =\{1; 2; 3; 4 \}$ %um tipo de espacamento entre números numa equação
+        \item tipo de espacamento entre números: $A =\{1;\, 2;\, 3;\, 4 \}$ %outro tipo de espaçamento entre números numa equação (colocando \, entre os números)
+        \item tipo de espacamento entre números: $A =\{1;\; 2;\; 3;\; 4 \}$ %outro tipo de espaçamento entre números numa equação (colocando \; entre os números)
+        \item tipo de espacamento entre números: $A =\{1;\ 2;\ 3;\ 4 \}$ %outro tipo de es paçamento entre números numa equação (colocando \ entre os números)
+    \end{enumerate}
+     
+     \item Sejam os conjuntos $A = \{1; 2; 3; 4\}$, 
+     $B = \{x \in \mathbb{Z} \;|\; -2 \leq x < 4 \}$ %B pertence ao universo dos inteiros
+     e $\{C \in \mathbb{N} \,|\, x \geq 2 \}$. %C pertence ao universo dos naturais
+     Responda aos itens abaixo:
+     
+     \begin{enumerate}
+         \item $A \cap B$ %A intercecção B
+         \item $B \cup C$ %B união C
+         \item $A - C$ %A menos C
+         \item $B \setminus C$ %B menos C
+     \end{enumerate}
+     
+     \item Classifique em Verdadeiro ou Falso:
+     
+     \begin{enumerate}
+         \item $\mathbb{Z} \subset \mathbb{N}$ %Z está contido em N
+         \item $\mathbb{R} \supset \mathbb{Q}$ %R contém Q
+         \item $\mathbb{Z} \not\subset \mathbb{N}$ %Z não está contido em N
+         \item $\mathbb{R} \not\supset \mathbb{Q}$ %R não contém Q
+         \item $0 \not\in \mathbb{I}$ %0 não pertence a I
+         \item $0 \not\in \mathbb{R} \setminus \mathbb{Q}$ %0 não pertence a R - Q
+         \item $\forall \ x \in \mathbb{N}$, temos $x \geq 0$ %para todo x pertencente aos números naturais, x é maior ou igual a 0
+         \item $\exists \ x \in \mathbb{R}$ tal que $\sqrt{x} \not\in \mathbb{R}$ %Existe x pertencente aos Reais tal que a raiz quadrada de x não pertenca a R
+         \item $7 \not\in \{x \in \mathbb{N} \,|\, x \textrm{ é par}\}$ %para se digitar um texto dentro de um ambiente matemático $$, deve-se usar a função \textrm{escreva seu texto aqui}
+         \item $-5 \in \mathbb{R}^*_+$
+         \item $0 \in \varnothing$ %0 pertence ao conjunto vazio
+         
+     \end{enumerate}
+     
+\end{enumerate}
+\end{document}

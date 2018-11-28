@@ -1,0 +1,56 @@
+%Notações de Função
+\documentclass[a4paper, 12pt]{article}
+\usepackage[top=2cm, bottom=2cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amsfonts, amssymb} 
+\DeclareMathOperator{\sen}{sen} %declara o operador matemático seno (para exibir em português)
+
+\begin{document}
+
+\begin{enumerate}
+    \item Seja a função 
+    $$f : \mathbb{R} \to \mathbb{R}$$ %\to representa uma seta
+    $$x \mapsto \dfrac{1}{2}x^2 - 2x + 1$$. %\mapsto representa outra seta
+    
+    \item Seja a função
+    $$f:\mathbb{R} \to \mathbb{R}$$
+    $$f(x) = 
+    \begin{cases} %usado quando uma variável dependente assume funções diferentes, dependendo do valor da variável independente
+        
+        x^2 - 1; \, \textrm{se } x \geq 1 \\ %essas barras duplas pulam linha
+        x - 3; \, \textrm{se } -1 \leq x < 1 \\  
+        2x + 1; \, \textrm{se } x < -1
+        
+    \end{cases}
+    $$
+  
+    \item Seja a função
+    $$f: \mathbb{R} \to \mathbb{R^*_+}$$
+    $$f(x) = 
+    \begin{cases}
+        \log_2 x \textrm{, se } x \geq 3\\ %função logarítimica
+        \ln x \textrm{, se } x < 3
+    \end{cases}
+    $$
+    
+    \item Seja a função
+    $$f : \mathbb{R} \to \mathbb{R}$$
+    $$f(x) = \cos x$$ %funções trigonométricas
+    $$f(x) = \sin x$$
+    $$f(x) = \sen x$$ %essa função só existe porque foi declarada no preâmbulo
+    
+    \item Seja a função
+    $$f : \mathbb{R} \to \mathbb{R}$$
+    $$f(x) = \sin (x - \frac{\pi}{2})$$ %colocando parênteses que não cobrem a altura da fração
+    $$f(x) = \sin \left(x - \frac{\pi}{2} \right)$$ %colocando parênteses que cubra a altura da fração
+    $$f(x) = \sin \left[x - \frac{\pi}{2} \right]$$ %colocando colchetes que cubra a altura da fração
+    $$f(x) = \sin \left\{x - \frac{\pi}{2} \right\}$$ %colocando colchetes que cubra a altura da fraçã 
+    
+    
+    \begin{enumerate}
+        \item Esboce o gráfico da função
+    \end{enumerate}
+    
+\end{enumerate}
+
+\end{document}
